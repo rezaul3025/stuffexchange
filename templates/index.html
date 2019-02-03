@@ -233,7 +233,7 @@
 										</ul>
 									</li>
 									<li><a href="blog.html">Blog<i class="fas fa-chevron-down"></i></a></li>
-									<li><a href="contact.html">Contact<i class="fas fa-chevron-down"></i></a></li>
+									<li><a href="/contact">Contact<i class="fas fa-chevron-down"></i></a></li>
 								</ul>
 							</div>
 
@@ -1892,9 +1892,10 @@
 	</div>
 
 	<!-- Banner -->
-
+	{% block banner_2 %}
+	{% endblock %}
 	<div class="banner_2">
-		<div class="banner_2_background" style="background-image:url(images/banner_2_background.jpg)"></div>
+		<div class="banner_2_background" style="background-image:url({% static "images/banner_2_background.jpg" %})"></div>
 		<div class="banner_2_container">
 			<div class="banner_2_dots"></div>
 			<!-- Banner 2 Slider -->
@@ -1918,7 +1919,7 @@
 								</div>
 								<div class="col-lg-8 col-md-6 fill_height">
 									<div class="banner_2_image_container">
-										<div class="banner_2_image"><img src="images/banner_2_product.png" alt=""></div>
+										<div class="banner_2_image"><img src="{% static "images/banner_2_product.png" %}" alt=""></div>
 									</div>
 								</div>
 							</div>
@@ -1981,7 +1982,8 @@
 	</div>
 
 	<!-- Hot New Arrivals -->
-
+	{% block new_arrivals %}
+	{% endblock %}
 	<div class="new_arrivals">
 		<div class="container">
 			<div class="row">
@@ -3252,7 +3254,8 @@
 	</div>
 
 	<!-- Best Sellers -->
-
+	{% block best_sellers %}
+	{% endblock %}
 	<div class="best_sellers">
 		<div class="container">
 			<div class="row">
@@ -3950,7 +3953,8 @@
 	</div>
 
 	<!-- Adverts -->
-
+	{% block adverts %}
+	{% endblock %}
 	<div class="adverts">
 		<div class="container">
 			<div class="row">
